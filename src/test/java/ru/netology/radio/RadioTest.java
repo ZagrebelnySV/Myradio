@@ -4,9 +4,10 @@ import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
 public class RadioTest {
+
+    Radio radio = new Radio();
     @Test
     public void testSwitchStationsFromZeroToMinusOne() {
-        Radio radio = new Radio();
         radio.setCurrentStation(0);
 
         radio.setCurrentStation(-1);
@@ -19,7 +20,6 @@ public class RadioTest {
 
     @Test
     public void testSwitchStationsFromZeroToOne() {
-        Radio radio = new Radio();
         radio.setCurrentStation(0);
 
         radio.setCurrentStation(1);
@@ -32,7 +32,6 @@ public class RadioTest {
 
     @Test
     public void testSwitchStationsFromOneToZero() {
-        Radio radio = new Radio();
         radio.setCurrentStation(1);
 
         radio.setCurrentStation(0);
@@ -45,7 +44,6 @@ public class RadioTest {
 
     @Test
     public void testSwitchStationsFromEightToNine() {
-        Radio radio = new Radio();
         radio.setCurrentStation(8);
 
         radio.setCurrentStation(9);
@@ -58,7 +56,6 @@ public class RadioTest {
 
     @Test
     public void testSwitchStationsFromNineToTen() {
-        Radio radio = new Radio();
         radio.setCurrentStation(9);
 
         radio.setCurrentStation(10);
@@ -71,7 +68,6 @@ public class RadioTest {
 
     @Test
     public void testNextStationFromZeroToOne() {
-        Radio radio = new Radio();
         radio.setCurrentStation(0);
 
         radio.nextStation();
@@ -84,7 +80,6 @@ public class RadioTest {
 
     @Test
     public void testNextStationFromEightToNine() {
-        Radio radio = new Radio();
         radio.setCurrentStation(8);
 
         radio.nextStation();
@@ -97,7 +92,6 @@ public class RadioTest {
 
     @Test
     public void testNextStationFromNineToZero() {
-        Radio radio = new Radio();
         radio.setCurrentStation(9);
 
         radio.nextStation();
@@ -110,7 +104,6 @@ public class RadioTest {
 
     @Test
     public void testPrevStationFromOneToZero() {
-        Radio radio = new Radio();
         radio.setCurrentStation(1);
 
         radio.prevStation();
@@ -123,7 +116,6 @@ public class RadioTest {
 
     @Test
     public void testPrevStationFromZeroToNine() {
-        Radio radio = new Radio();
         radio.setCurrentStation(0);
 
         radio.prevStation();
@@ -136,7 +128,6 @@ public class RadioTest {
 
     @Test
     public void testPrevStationFromNineToEight() {
-        Radio radio = new Radio();
         radio.setCurrentStation(9);
 
         radio.prevStation();
@@ -149,7 +140,6 @@ public class RadioTest {
 
     @Test
     public void testNextVolumeFromZeroToOne() {
-        Radio radio = new Radio();
         radio.setGetCurrentVolume(0);
 
         radio.nextVolume();
@@ -162,7 +152,6 @@ public class RadioTest {
 
     @Test
     public void testNextVolumeFromNinetyNineToHundred() {
-        Radio radio = new Radio();
         radio.setGetCurrentVolume(99);
 
         radio.nextVolume();
@@ -175,7 +164,6 @@ public class RadioTest {
 
     @Test
     public void testNextVolumeFromHundred() {
-        Radio radio = new Radio();
         radio.setGetCurrentVolume(100);
 
         radio.nextVolume();
@@ -188,7 +176,6 @@ public class RadioTest {
 
     @Test
     public void testPrevVolumeFromHundred() {
-        Radio radio = new Radio();
         radio.setGetCurrentVolume(100);
 
         radio.prevVolume();
@@ -201,7 +188,6 @@ public class RadioTest {
 
     @Test
     public void testPrevVolumeFromZero() {
-        Radio radio = new Radio();
         radio.setGetCurrentVolume(0);
 
         radio.prevVolume();
